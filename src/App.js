@@ -8,6 +8,7 @@ import Login from './Components/Login/Login';
 import RegisterVolunteer from './Components/VolunteerRegistration/RegisterVolunteer';
 import EventTasks from './Components/EventTasks/EventTasks';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import AdminLogin from './Components/AdminLogin/AdminLogin';
 
 export const UserContext = createContext();
 export const EventContext = createContext();
@@ -44,6 +45,9 @@ function App() {
                 </Route>
                 <Route path='/login'>
                   <Login />
+                </Route>
+                <Route path='/admin-login'>
+                  <AdminLogin />
                 </Route>
                 <Route path='/admin'>
                   <Admin />

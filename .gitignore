@@ -32,3 +32,4 @@ src/Configs/firebaseConfig.js
 firebase.json
 .firebaserc
 
+storage.rules

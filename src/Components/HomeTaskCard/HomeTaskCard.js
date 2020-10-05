@@ -6,8 +6,12 @@ function HomeTaskCard({ task, color }) {
     <div className='col-lg-3 col-md-4'>
       <Link to={`/register/${task._id}`} style={{ textDecoration: 'none' }}>
         <div
-          className={`card  bg-${color} my-3`}
-          style={{ borderRadius: '10px' }}>
+          className={`card   bg-${color} my-3`}
+          style={{
+            borderRadius: '10px',
+            maxWidth: '300px',
+            maxHeight: '450px',
+          }}>
           <img
             className='image-fluid'
             src={task.imageURL}

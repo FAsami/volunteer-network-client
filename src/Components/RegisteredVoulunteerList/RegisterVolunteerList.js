@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaRegTrashAlt, FaListUl } from 'react-icons/fa';
 
-function RegisterVolunteerList() {
+function RegisteredVolunteerList() {
   const [allTask, setAllTask] = useState([]);
   useEffect(() => {
     fetch(`https://volunteer-network-fasami.herokuapp.com/events`)
@@ -60,4 +60,4 @@ function RegisterVolunteerList() {
   );
 }
 
-export default RegisterVolunteerList;
+export default RegisteredVolunteerList;

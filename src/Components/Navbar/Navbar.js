@@ -6,6 +6,7 @@ import { UserContext } from '../../App';
 
 function Navbar(props) {
   const { user } = useContext(UserContext);
+
   return (
     <nav className='navbar navbar-expand-lg navbar-light'>
       <Link className='navbar-brand' to='/'>
@@ -61,7 +62,7 @@ function Navbar(props) {
             </Link>
           )}
           {props.home && (
-            <Link className='px-2' to='/admin'>
+            <Link className='px-2' to='/admin-login'>
               <button className='btn btn-sm btn-secondary'>Admin</button>
             </Link>
           )}
