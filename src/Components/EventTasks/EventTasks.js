@@ -11,7 +11,7 @@ function EventTasks() {
   const { events, setEvents } = useContext(EventContext);
 
   const handleDelete = (id) => {
-    fetch(`https://sleepy-earth-37099.herokuapp.com//delete-event/${id}`, {
+    fetch(`https://volunteer-network-fasami.herokuapp.com/delete-event/${id}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())

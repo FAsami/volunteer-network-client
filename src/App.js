@@ -19,14 +19,14 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch(`https://sleepy-earth-37099.herokuapp.com//tasks`)
+    fetch(`https://volunteer-network-fasami.herokuapp.com/tasks`)
       .then((res) => res.json())
       .then((data) => setTasks(data));
   }, []);
 
   useEffect(() => {
     fetch(
-      `https://sleepy-earth-37099.herokuapp.com//volunteer-events/${user.email}`
+      `https://volunteer-network-fasami.herokuapp.com/volunteer-events/${user.email}`
     )
       .then((res) => res.json())
       .then((data) => setEvents(data));

@@ -35,7 +35,7 @@ function AddEvent() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    fetch('https://sleepy-earth-37099.herokuapp.com//add-task', {
+    fetch('https://volunteer-network-fasami.herokuapp.com/add-task', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...eventData, imageURL }),

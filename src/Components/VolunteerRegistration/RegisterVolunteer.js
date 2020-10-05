@@ -23,7 +23,7 @@ function RegisterVolunteer() {
   const handleSubmit = (e) => {
     const event = { ...user, ...volunteer, image: imageURL, title: eventTitle };
     e.preventDefault();
-    fetch('https://sleepy-earth-37099.herokuapp.com//register-volunteer', {
+    fetch('https://volunteer-network-fasami.herokuapp.com/register-volunteer', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(event),

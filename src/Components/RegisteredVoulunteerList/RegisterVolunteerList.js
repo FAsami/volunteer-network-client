@@ -4,13 +4,13 @@ import { FaRegTrashAlt, FaListUl } from 'react-icons/fa';
 function RegisterVolunteerList() {
   const [allTask, setAllTask] = useState([]);
   useEffect(() => {
-    fetch(`https://sleepy-earth-37099.herokuapp.com//events`)
+    fetch(`https://volunteer-network-fasami.herokuapp.com/events`)
       .then((res) => res.json())
       .then((data) => setAllTask(data));
   }, []);
 
   const handleDelete = (id) => {
-    fetch(`https://sleepy-earth-37099.herokuapp.com//delete-event/${id}`, {
+    fetch(`https://volunteer-network-fasami.herokuapp.com/delete-event/${id}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())
